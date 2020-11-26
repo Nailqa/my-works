@@ -909,6 +909,7 @@ template {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 70px;
+  margin-top: 0;
 }
 
 .reviews-slider__item {
@@ -954,7 +955,7 @@ template {
 
 .reviews-slider__button {
   position: absolute;
-  top: 50%;
+  top: 40%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 30px;
@@ -1103,6 +1104,11 @@ template {
   .map {
     width: 340px;
   }
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 50px;
+  }
   .reviews-slider__item {
     max-width: 580px;
   }
@@ -1201,10 +1207,6 @@ template {
   .newsletter__title {
     margin-bottom: 37px;
   }
-  .reviews__title {
-    font-size: 30px;
-    line-height: 38px;
-  }
   .reviews-slider__item {
     padding: 0 30px 30px;
   }
@@ -1253,6 +1255,8 @@ template {
     width: 100%;
   }
   .reviews__title {
+    max-width: 245px;
+    margin: 0 auto 42px;
     font-size: 18px;
     line-height: 23px;
   }
