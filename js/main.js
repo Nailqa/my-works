@@ -22,3 +22,11 @@ var reviewsSwiper = new Swiper(".reviews-slider", {
   },
 });
 $(".parallax-window").parallax({ imageSrc: "../img/newsletter-bg.jpg" });
+
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", function () {
+  console.log("Клик по кнопке меню");
+  document
+    .querySelector(".menu-buttom")
+    .classList.toggle(".menu-buttom--visible");
+});
