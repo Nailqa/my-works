@@ -1634,10 +1634,26 @@ template {
     grid-column: 1;
   }
   .footer__social-network {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -ms-grid-row: 2;
     grid-row: 2;
     -ms-grid-column: 1;
     grid-column: 1;
+  }
+  .footer__social-inline {
+    margin-bottom: 20px;
+  }
+  .footer__social-links {
+    display: block;
   }
   .footer__additional {
     -ms-grid-row: 3;
