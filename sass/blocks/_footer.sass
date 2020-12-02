@@ -24,6 +24,7 @@
     &-network
       display: flex
       align-content: start
+      margin-top: 24px
       grid-row: 2 / 4
       grid-column: span 2
   &__contact
@@ -60,10 +61,16 @@
     line-height: 160%
     color: $footer-text-color
     &--mb-2
-      margin-bottom: 20px
-  &__icon
+      margin-bottom: 20px      
+  &__icon    
+    text-decoration: none
+    color: inherit
     &-wrapper
       min-width: 40px
+  &__phone
+    display: contents
+    text-decoration: none
+    color: inherit
   &__text
     color: $footer-text-color
     margin-bottom: 22px
@@ -85,9 +92,13 @@
     border: none 
     flex-basis: 100%
     margin-bottom: 23px
-    widows: 540px
+    width: 540px
     height: 125px
     resize: none
+  &__butreq
+    display: grid
+    grid-template-columns: 1fr 3fr
+    align-items: center 
   &__button
     min-width: 160px
     min-height: 50px
@@ -100,12 +111,36 @@
     background-color: $primary
     border: none
     border-radius: 4px
+    cursor: pointer
+  button:hover 
+    background: rgba(0,0,0,0)
+    color: $primary
+    box-shadow: inset 0 0 0 3px $primary
   &__info
     font-style: normal
     font-weight: bold
     font-size: 12px
     line-height: 15px
     color: #E0E0E0
+    justify-self: end
+  &__down  
+    grid-column: 2 / 4
+    justify-self: center
+    align-self: self-end 
+    padding-top: 100px    
+    &-text
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px             
+  &-payments
+    width: 140px
+    height: 25px 
+    grid-column-end: 5    
+    justify-self: end
+    align-self: self-end 
+    
+     
 
 
     

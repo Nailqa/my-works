@@ -93,6 +93,13 @@
       &-form
         grid-column: span 5
         grid-row: 4
+    &__down
+      padding-top: 20px
+      grid-column: span 3
+      justify-self: start
+    &-payments
+      grid-column: span 2
+      grid-column-end: 7
 @media ( max-width: 768px )
   .container
     max-width: 576px
@@ -281,3 +288,24 @@
       &-form
         grid-row: 7
         grid-column: 1
+    &__icon
+      &-wrapper
+        min-width: 30px
+    &__message
+      width: 100%
+    &__butreq
+      grid-template-columns: 1fr
+    &__info
+      order: -1
+      margin-bottom: 15px
+      justify-self: start
+    &__down
+      padding-top: 0
+      grid-row: 8
+      grid-column: 1
+      align-self: self-start
+      margin-bottom: 40px
+    &-payments
+      justify-self: start
+      grid-row: 8
+      grid-column: 1

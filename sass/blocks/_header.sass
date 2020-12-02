@@ -58,6 +58,17 @@
     border: none
     background-color: $primary
     cursor: pointer
+  button:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 0
+    height: 42px
+    background: rgba(255,255,255,0.3)
+    transition: all 1s ease
+  button:hover:before
+    width: 100%
 .user
   display: flex
   align-items: center

@@ -476,11 +476,12 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <img
-            src="img/vertical-logo.svg"
-            alt="Logo: Best Tour Plan"
-            class="logo footer__logo"
-          />
+          <a href="index.html" class="logo footer__logo"
+            ><img
+              src="img/vertical-logo.svg"
+              alt="Logo: Best Tour Plan"
+              class="logo footer__logo"
+          /></a>
           <div class="footer__list footer__categories">
             <h3 class="footer__title">ALL CATEGORIES</h3>
             <ul class="footer__ul">
@@ -596,9 +597,13 @@
                     alt="icon: phone"
                   />
                 </div>
-                Tel (business hours) : 269 1500 <br />Tel (hotline) Monday -
-                Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br />Tel (hotline)
-                Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                Tel (business hours) :
+                <a href="tel: 269 1500" class="footer__phone">269 1500</a>
+                <br />Tel (hotline) Monday - Saturday:
+                <a href="tel: 52-56-61-38" class="footer__phone">52-56-61-38</a>
+                (08:00 am – 20:00 pm) <br />Tel (hotline) Sunday:
+                <a href="tel: 52-56-61-38" class="footer__phone">52-56-61-38</a>
+                (08:00 am – 14:00 pm)
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
@@ -608,7 +613,9 @@
                     alt="icon: email"
                   />
                 </div>
-                cherly.lawson@example.com
+                <a href="mailto:cherly.lawson@example.com" class="footer__icon">
+                  cherly.lawson@example.com</a
+                >
               </li>
             </ul>
           </div>
@@ -630,11 +637,27 @@
                 class="footer__message"
                 placeholder="Message"
               ></textarea>
-              <button class="button footer__button" type="submit">Send</button>
-              <span class="footer__info">* Required Fields</span>
+              <div class="footer__butreq">
+                <button class="button footer__button" type="submit">
+                  Send
+                </button>
+                <span class="footer__info">* Required Fields</span>
+              </div>
             </form>
           </div>
           <!-- /.footer__contacts-form -->
+          <div class="footer__down">
+            <span class="footer__down-text">Disclaimer </span>
+            <span class="footer__down-text">Conditions of use </span>
+            <span class="footer__down-text">Cancellation policy </span>
+          </div>
+          <div class="footer-payments">
+            <img
+              class="footer__payments"
+              src="img/payments.png"
+              alt="payments"
+            />
+          </div>
         </div>
         <!-- /.footer-wrapper -->
       </div>
@@ -642,8 +665,8 @@
     </footer>
     <!-- /.footer -->
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

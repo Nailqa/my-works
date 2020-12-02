@@ -27,6 +27,6 @@ var menuButton = document.querySelector(".menu-button");
 menuButton.addEventListener("click", function () {
   console.log("Клик по кнопке меню");
   document
-    .querySelector(".menu-buttom")
-    .classList.toggle(".menu-buttom--visible");
+    .querySelector(".navbar-bottom")
+    .classList.toggle("navbar-bottom--visible");
 });
