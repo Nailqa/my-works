@@ -19,7 +19,7 @@ $body = "
 <b>Сообщение:</b><br>$message
 <b>Email:</b> $email<br>
 ";
-$title = "Новая подписка на Best Tor Plan";
+$title = "Новая подписка на рассылку новостей Best Tor Plan";
 $body = "
 <b>Email:</b> $email<br>
 ";
