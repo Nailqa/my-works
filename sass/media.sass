@@ -120,6 +120,8 @@
           display: none
         &_visible
           display: flex
+    &__search
+      width: 243px
     &__user
       flex-direction: column
       justify-content: center
@@ -133,6 +135,7 @@
       padding-top: 30px
       &--visible
         display: block
+        overflow: scroll
     &-menu
       flex-direction: column
       &__item
@@ -229,10 +232,12 @@
   .logo
     width: 99px
   .hotel
+    padding-top: 0
+    padding-bottom: 40px
     &__slider
       margin-bottom: 20px
     &-slider
-      height: 250px
+      height: 180px
   .newsletter
     padding: 76px 0 83px 0
     &__title

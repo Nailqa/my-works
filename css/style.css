@@ -1169,6 +1169,16 @@ template {
           box-shadow: inset 0 0 0 3px #EC1F46;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  margin-bottom: 10px;
+  text-decoration: underline;
+  color: red;
+}
+
 .footer {
   background-color: #0a223d;
   color: #ffffff;
@@ -1307,7 +1317,6 @@ template {
 
 .footer__phone {
   display: contents;
-  text-decoration: none;
   color: inherit;
 }
 
@@ -1590,6 +1599,9 @@ template {
     display: -ms-flexbox;
     display: flex;
   }
+  .navbar__search {
+    width: 243px;
+  }
   .navbar__user {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1610,6 +1622,7 @@ template {
   }
   .navbar-bottom--visible {
     display: block;
+    overflow: scroll;
   }
   .navbar-menu {
     -webkit-box-orient: vertical;
@@ -1755,11 +1768,15 @@ template {
   .logo {
     width: 99px;
   }
+  .hotel {
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
   .hotel__slider {
     margin-bottom: 20px;
   }
   .hotel-slider {
-    height: 250px;
+    height: 180px;
   }
   .newsletter {
     padding: 76px 0 83px 0;
