@@ -1778,6 +1778,10 @@ a:hover {
   .hotel-slider {
     height: 180px;
   }
+  .hotel-slider__button {
+    width: 15px;
+    height: 15px;
+  }
   .newsletter {
     padding: 76px 0 83px 0;
   }
