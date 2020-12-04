@@ -100,6 +100,9 @@
     &-payments
       grid-column: span 2
       grid-column-end: 7
+  .modal
+    &__dialog
+      width: 95%
 @media ( max-width: 768px )
   .container
     max-width: 576px
@@ -317,3 +320,16 @@
       justify-self: start
       grid-row: 8
       grid-column: 1
+  .modal
+    &__dialog
+      width: 95%
+      padding: 15px 30px
+    &__butreq
+      grid-template-columns: 1fr
+    &__info
+      order: -1
+      margin-bottom: 15px
+      justify-self: start
+    &__close
+      right: 10px
+      top: 10px
