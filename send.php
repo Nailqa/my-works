@@ -11,18 +11,24 @@ $message = $_POST['message'];
 $email = $_POST['email'];
 
 // Формирование самого письма
-$title = "Новое обращение Best Tor Plan";
-$body = "
-<h2>Новое письмо</h2>
-<b>Имя:</b> $name<br>
-<b>Телефон:</b> $phone<br><br>
-<b>Сообщение:</b><br>$message
-<b>Email:</b> $email<br>
-";
+if (empty($message)) {
+  // формируем смс с первой формы
 $title = "Новая подписка на рассылку новостей Best Tor Plan";
 $body = "
 <b>Email:</b> $email<br>
 ";
+}
+
+else {  
+  // формируем смс с футера
+$title = "Новое обращение Best Tor Plan";
+$body = "
+<h2>Новое обращение</h2>
+<b>Имя:</b> $name<br>
+<b>Телефон:</b> $phone<br><br>
+<b>Сообщение:</b><br>$message
+";
+}
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -30,19 +36,19 @@ try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    // $mail->SMTPDebug = 2;
+    $mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'islyaevnail@gmail.com'; // Логин на почте
-    $mail->Password   = 'islyaevnail'; // Пароль на почте
+    $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
+    $mail->Username   = 'islyaev_nail@mail.ru'; // Логин на почте
+    $mail->Password   = 'islyaevnailfatihovich100491'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('islyaevnail@gmail.com', 'Наиль Исляев'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('islyaev_nail@mail.ru', 'Наиль Исляев'); // Адрес самой почты и имя отправителя
 
     // Получатель письма 
-    $mail->addAddress('islyaev_nail@mail.ru');
+    $mail->addAddress('islyaevnail@gmail.com');
 
 // Отправка сообщения
 $mail->isHTML(true);
