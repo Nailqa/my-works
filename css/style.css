@@ -1881,6 +1881,11 @@ a:hover {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .modal__dialog {
+    overflow: auto;
+    position: fixed;
+    max-height: 100%;
+  }
 }
 
 @media (max-width: 576px) {
