@@ -53,26 +53,26 @@ $(document).ready(function () {
       //console.log("Нажата клавиша Escape");
       closeModal(event);
     }
-    // Обработка форм
-    $(".form").each(function () {
-      $(this).validate({
-        errorClass: "invalid",
-        messages: {
-          name: {
-            required: "Please specify your name",
-            minlength: "Your name must be at least 2 letters",
-          },
-          email: {
-            required: "We need your email address to contact you",
-            email:
-              "Your email address must be in the format of name@domain.com",
-          },
-          phone: {
-            required: "We need your phone number",
-          },
+  });
+  // Обработка форм
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "Your name must be at least 2 letters",
         },
-      });
-      $(".phone").mask("+7 (000) 000-00-00");
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+        phone: {
+          required: "We need your phone number",
+          minlength: "Your phone number must be at least 11 digits",
+        },
+      },
     });
+    $(".phone").mask("+7 (000) 000-00-00");
   });
 });
