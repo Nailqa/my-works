@@ -28,6 +28,7 @@ img {
   border: none;
   padding: 0 23px;
   height: 50px;
+  outline: none;
 }
 
 .message {
@@ -35,6 +36,7 @@ img {
   border-radius: 4px;
   padding: 18px 23px;
   border: none;
+  outline: none;
 }
 
 .button {
@@ -421,6 +423,7 @@ template {
 .navbar__search {
   margin-right: auto;
   margin-left: 108px;
+  outline: none;
 }
 
 .navbar-bottom {
@@ -479,6 +482,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #333333;
+  outline: none;
 }
 
 .search__button {
@@ -490,6 +494,7 @@ template {
   border: none;
   background-color: #EC1F46;
   cursor: pointer;
+  outline: none;
 }
 
 .search button:before {
@@ -677,6 +682,7 @@ template {
   background-position: center;
   background-size: 10px;
   background-color: transparent;
+  outline: none;
 }
 
 .hotel-slider__button--prev {
@@ -853,6 +859,7 @@ template {
   border: none;
   color: #ffffff;
   cursor: pointer;
+  outline: none;
 }
 
 .booking button:hover {
@@ -941,6 +948,7 @@ template {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+  outline: none;
 }
 
 .subscribe__button {
@@ -953,6 +961,7 @@ template {
   background-color: #EC1F46;
   color: #ffffff;
   cursor: pointer;
+  outline: none;
 }
 
 .subscribe button:hover {
@@ -1032,6 +1041,7 @@ template {
   background-color: transparent;
   cursor: pointer;
   z-index: 99;
+  outline: none;
 }
 
 .reviews-slider__button--prev {
@@ -1191,6 +1201,7 @@ template {
   border-radius: 4px;
   padding: 7px 22px;
   cursor: pointer;
+  outline: none;
 }
 
 .card button:hover {
@@ -1365,6 +1376,7 @@ a:hover {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
+  outline: none;
 }
 
 .footer__message {
@@ -1378,6 +1390,7 @@ a:hover {
   width: 540px;
   height: 125px;
   resize: none;
+  outline: none;
 }
 
 .footer__butreq {
@@ -1514,12 +1527,14 @@ a:hover {
 .modal__input {
   width: 100%;
   margin-bottom: 15px;
+  outline: none;
 }
 
 .modal__message {
   width: 100%;
   min-height: 123px;
   margin-bottom: 15px;
+  outline: none;
 }
 
 .modal__butreq {
