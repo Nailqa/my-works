@@ -9,6 +9,10 @@ body {
   color: #333333;
 }
 
+body_fix {
+  overflow-y: hidden;
+}
+
 .container {
   max-width: 1100px;
   margin: auto;
