@@ -17,6 +17,10 @@
       &-group
         flex-basis: 100%
 @media ( max-width: 992px )
+a:hover
+  margin-bottom: 0
+  text-decoration: none
+  color: inherit
   .container,
   .newsletter-wrapper
     max-width: 700px
@@ -105,7 +109,7 @@
   .modal
     &__dialog
       width: 95%
-@media ( max-width: 768px )
+@media ( max-width: 767px )
   .container
     max-width: 576px
     width: 92%
@@ -332,7 +336,7 @@
     &__dialog
       width: 95%
       padding: 15px 30px
-      height: 95vh
+      max-height: 100%
       overflow: scroll
     &__butreq
       grid-template-columns: 1fr
