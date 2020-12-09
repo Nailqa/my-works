@@ -9,7 +9,7 @@ body {
   color: #333333;
 }
 
-body_fix {
+.body_fix {
   overflow-y: hidden;
 }
 
@@ -62,7 +62,6 @@ img {
 
 .invalid {
   color: #EC1F46;
-  font-size: 15px;
   position: relative;
 }
 

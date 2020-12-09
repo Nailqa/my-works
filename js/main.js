@@ -34,14 +34,17 @@ $(document).ready(function () {
   var closeModalButton = $(".modal__close");
   modalButton.on("click", openModal);
   closeModalButton.on("click", closeModal);
+  var body = $("body");
 
   function openModal() {
+    body.addClass("body_fix");
     var targetModal = $(this).attr("data-href");
     $(targetModal).find(".modal__overlay").addClass("modal__overlay--visible");
     $(targetModal).find(".modal__dialog").addClass("modal__dialog--visible");
   }
 
   function closeModal(event) {
+    body.removeClass("body_fix");
     event.preventDefault();
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
@@ -57,7 +60,7 @@ $(document).ready(function () {
   // Обработка форм
   $(".form").each(function () {
     $(this).validate({
-      errorClass: "invalid",
+      errorClass: "animate_animated animate_shakeX invalid",
       messages: {
         name: {
           required: "Please specify your name",
