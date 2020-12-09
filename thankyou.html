@@ -149,7 +149,7 @@
               Our Manager will call you in 5 minutes.
             </p>          
         </div>
-        <a href="index.html">На главную</a>
+        <a href="index.html" class="back">На&nbspглавную</a>
         <!-- /.hotel-info -->
       </div>
       <!-- /.container -->
@@ -308,18 +308,22 @@
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
             <form action="send.php" method="POST" class="footer__form">
+              <div class="footer__input-group">
               <input
                 type="text"
                 class="input footer__input"
                 placeholder="Your Full Name*"
                 name="name"
               />
+              </div>
+              <div class="footer__input-group">
               <input
                 type="text"
                 class="input footer__input"
                 placeholder="Phone Number*"
                 name="phone"
               />
+              </div>
               <textarea
                 class="footer__message"
                 placeholder="Message"
