@@ -59,7 +59,7 @@ $(document).ready(function () {
   // Обработка форм
   $(".form").each(function () {
     $(this).validate({
-      errorClass: "animate_animated animate_shakeX invalid",
+      errorClass: "invalid",
       messages: {
         name: {
           required: "Please specify your name",
