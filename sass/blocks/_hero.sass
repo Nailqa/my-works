@@ -1,0 +1,104 @@
+.hero
+  padding-bottom: 120px
+  &-container
+    max-width: 1280px
+    margin: auto    
+  &-wrapper 
+    position: relative    
+    padding: 59px 0 54px 105px
+    border-radius: 8px    
+    overflow: hidden    
+    &:before
+      content: ''
+      position: absolute
+      width: 977px
+      height: 1487px
+      transform: translate(29.9%, -25.4%)
+      background-image: url(../img/hero.png)
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 109%
+      z-index: -2
+    &:after
+      content: ''
+      position: absolute
+      width: 700px
+      height: 800px
+      left: 0
+      right: -100%
+      top: 0
+      bottom: 0
+      background: linear-gradient(270deg, rgba(238, 238, 238, 0.00001) 0%, #E8EAE9 30%)
+      background-repeat: no-repeat
+      background-position: center
+      z-index: -1  
+  &-hashtag    
+    max-width: 175px
+    text-transform: uppercase
+    font-weight: 600
+    font-size: 14px
+    line-height: 20px
+    color: $green
+    cursor: pointer
+    outline: none
+    background-color: rgba(54, 179, 126, 0.1)
+    border-radius: 2000px
+    padding: 6px 16px
+  &-title
+    max-width: 425px    
+    font-family: HK Grotesk
+    font-style: normal
+    font-weight: bold
+    font-size: 56px
+    line-height: 68px
+    color: $dark
+    margin: 22px 0 0 0
+  &-text
+    max-width: 652px
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 36px
+    color: $grey
+    margin-top: 33px
+    margin-bottom: 50px
+  &-button
+    color: $light
+    background: $dark
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 25px
+    border-radius: 8px    
+    padding: 16px 40px
+    border: none
+    cursor: pointer
+    outline: none
+  button:hover
+    background: rgba(0,0,0,0)
+    color: $dark
+    box-shadow: inset 0 0 0 3px $dark
+  &-down
+    margin-top: 44px
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: flex-start
+    &_item
+      display: flex      
+      align-items: center      
+      margin-right: 31px
+      &__image
+        border: 0.75px solid rgba(21,101,216,0.5)
+        border-radius: 12px
+        margin-right: 7px
+        padding: 7px
+      &__text
+        font-family: HK Grotesk
+        font-style: normal
+        font-weight: 500
+        font-size: 16px
+        line-height: 20px
+        color: $dark
+

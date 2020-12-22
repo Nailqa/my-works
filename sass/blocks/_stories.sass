@@ -1,0 +1,143 @@
+.stories 
+  padding-bottom: 140px
+  &-container    
+    max-width: 1150px
+    margin: auto
+  &-wrapper  
+    width: 1150px
+    display: flex
+    flex-direction: row
+    align-items: flex-start
+    justify-content: space-between
+  &-text
+    max-width: 392px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: flex-start
+  &-hashtag
+    display: block
+    max-width: 102px
+    text-transform: uppercase    
+    font-weight: 600
+    font-size: 14px
+    line-height: 20px
+    color: $green  
+    padding: 6px 16px
+    background-color: rgba(54,179,126, 0.1)
+    border-radius: 2000px
+    margin-bottom: 24px
+  &-title    
+    font-family: HK Grotesk
+    font-style: normal
+    font-weight: bold
+    font-size: 48px
+    line-height: 60px
+    color: $dark
+    margin: 0 0 29px 0
+  &-story
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 36px
+    color: $dark
+    margin: 0 0 45px 0
+  &-buttons
+    position: static
+    width: 132px
+    height: 56px
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    margin-left: 2px
+    &_wrapper
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: space-between
+      position: absolute
+      width: 56px
+      height: 56px
+    &_prev
+      width: 56px
+      height: 56px
+      top: 25px
+      left: -3px
+      bottom: 0
+      right: 0
+      &:focus
+        outline: none
+      &:hover
+        opacity: 0.5
+    &_next
+      width: 56px
+      height: 56px
+      top: 25px
+      left: 74px
+      bottom: 0
+      right: 0
+      &:focus
+        outline: none
+      &:hover
+        opacity: 0.5
+  &-slider
+    margin-top: 10px
+    overflow: hidden
+    &_wrapper
+      max-width: 662px
+      display: flex
+      flex-direction: row
+      align-items: center
+      &_slide
+        display: flex
+        flex-direction: row
+        align-items: flex-start
+        justify-content: space-between
+    &_group
+      max-width: 322px
+      margin-right: 18px
+      &_picture
+        width: 100%
+        height: 100%
+        border-radius: 8px 8px 0 0
+        overflow: hidden
+        &_image
+          display: block
+          object-fit: cover
+          top: 0
+          right: 0
+          bottom: 0
+          left: 0
+          width: 312px
+          height: 317px
+      &_description
+        position: relative
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: space-between
+        bottom: 20px
+        left: 10px
+        width: 312px
+        min-height: 178px
+        background-color: #FAFDFF
+        padding: 20px 25px 20px 20px
+        &_title
+          font-family: HK Grotesk
+          font-style: normal
+          font-weight: 500
+          font-size: 22px
+          line-height: 32px
+          color: $dark
+          margin: 0 0 20px 0
+        &_link
+          font-style: normal
+          font-weight: 600
+          font-size: 16px
+          line-height: 22px
+          text-decoration: none
+          color: $blue
+.line  
+  border: 1px solid #E5EAF4
+  margin: 0 auto 120px auto

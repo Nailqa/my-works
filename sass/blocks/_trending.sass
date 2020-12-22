@@ -1,0 +1,164 @@
+.trending
+  padding-bottom: 94px
+  &-container
+    max-width: 1135px
+    min-height: 1040px
+    margin: auto
+  &-wrapper
+    display: flex
+    flex-direction: column    
+  &-texts
+    &_group
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+    &_tabs
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      min-width: 402px
+      margin-right: 2px      
+    &_title
+      font-family: HK Grotesk
+      font-style: normal
+      font-weight: bold
+      font-size: 48px
+      line-height: 60px
+      color: $dark
+      margin: 0
+  &-tabs
+    display: flex
+    align-items: center
+    align-content: center
+    justify-content: flex-end
+    font-weight: normal
+    font-size: 18px
+    line-height: 25px
+    color: $grey
+    cursor: pointer
+    &:hover
+      color: $primary
+    &_active
+      font-weight: bold
+      font-size: 18px
+      line-height: 25px
+      color: $dark
+    &:hover
+      color: $primary
+  &-goods
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    margin-top: 55px
+    padding: 0
+    object-fit: cover
+    &_card
+      max-height: 441px
+      margin-bottom: 48px
+      object-fit: cover
+      &_details
+        padding: 16px 10px 10px 12px
+        width: 260px
+        &_group
+          display: flex
+          flex-direction: row
+          justify-content: space-between
+          align-items: center
+        &_price
+          font-style: normal
+          font-weight: normal
+          font-size: 20px
+          line-height: 36px
+          color: $grey          
+          margin-top: 6px
+        &_title
+          font-family: HK Grotesk
+          font-style: normal
+          font-weight: bold
+          font-size: 24px
+          line-height: 32px
+          color: $dark
+          margin: 0
+        &_cart
+          width: 23px
+          height: 23px
+          margin-top: 8px
+          object-fit: cover
+          &_image
+            cursor: pointer
+      &_wrapper
+        width: 260px
+        height: 350px
+        border-radius: 8px
+        overflow: hidden
+        object-fit: cover
+        &_bg
+          position: relative
+          display: flex
+          flex-direction: column
+          align-items: center
+          justify-content: space-between
+          width: 100%
+          height: 100%
+          color: $light
+          background-color: $blue
+          padding: 124px 22px 107px 21px
+          z-index: 1
+          &:after
+            content: ''
+            position: absolute
+            width: 28px
+            height: 28px
+            background-image: url(../img/plus.svg)
+            background-repeat: no-repeat
+            background-position: center
+            z-index: 2
+          &:hover
+            background-color: #6fa1e9
+        &_image
+          width: 100%
+          height: 100%
+          top: 0
+          right: 0
+          bottom: 0
+          left: 0
+          object-fit: cover
+        &_text
+          font-family: HK Grotesk
+          font-style: normal
+          font-weight: bold
+          font-size: 24px
+          line-height: 32px
+          text-decoration: none
+          color: $light
+          text-align: center
+          &:hover
+            color: $light
+        &_icon
+          margin-bottom: 18px
+          &_image
+            width: 27px
+            height: 27px
+    &_group
+      min-height: 927px
+      display: flex
+      justify-content: space-between
+  &-content
+    display: none
+    &_active
+      display: block
+.tabs
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  list-style-type: none
+  align-items: center
+  flex-wrap: wrap
+  min-width: 285px  
+  margin-top: 10px
+.content
+  list-style-type: none
+  min-height: 982px
+  overflow: hidden
+  padding: 0
+  margin: 0

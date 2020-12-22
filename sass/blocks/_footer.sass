@@ -1,0 +1,79 @@
+.footer
+  padding-top: 100px
+  margin-bottom: 130px
+  &-wrapper
+    &_navbar
+      display: grid
+      grid-template-columns: 270px 168px 169px 168px 168px
+      justify-items: start
+      justify-content: start
+      column-gap: 25px
+      &_main
+        grid-column-start: 1
+        display: flex
+        justify-items: space-between
+        flex-direction: column
+      &_logo
+        &_image
+          width: 98px
+          height: 28px
+          margin-bottom: 25px
+      &_slogan
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 28px
+        margin-bottom: 30px
+        margin-left: 5px
+        color: $grey
+      &_icongroup
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        width: 185px
+        margin-left: 5px
+      &_icon
+        background-color: #eff1f3
+        border-radius: 2000px
+        width: 40px
+        height: 40px
+        padding: 12px        
+      &_navigation
+        grid-column-start: 2
+        align-self: start
+      &_services
+        grid-column-start: 3
+        align-self: start
+      &_company
+        grid-column-start: 4
+        align-self: start
+      &_contacts
+        grid-column-start: 5
+        align-self: start
+  &-ul
+    list-style-type: none
+    color: $dark  
+    margin: 0
+    padding: 0
+  &-title
+    font-weight: bold
+    font-size: 18px
+    line-height: 25px
+    color: $dark
+    margin: 0 0 31px 0
+  &-item
+    font-size: 16px
+    line-height: 22px
+    margin: 0 0 24px 0
+  &-link
+    text-decoration: none 
+    color: $dark   
+  
+.to-top  
+  position: fixed
+  bottom: 20px
+  right: 20px
+  z-index: 99
+  border: none
+  outline: none
